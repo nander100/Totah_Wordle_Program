@@ -10,7 +10,7 @@ public class RunWordle extends GameCommands   {
         addRemainingLetters();
         while (guessCounter!=6){
             displayTotal();
-c            setGuese();
+            setGuese();
             checkGuess();
             setRemainingLetters();
             if (!userInput.equalsIgnoreCase(finalWord)){

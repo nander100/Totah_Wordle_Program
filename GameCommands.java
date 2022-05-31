@@ -7,7 +7,7 @@ public class GameCommands{
     public static String[] currentGameState = new String[5];//the array of strings that is printed when a guess is made
     public static Scanner wordScanner = new Scanner(System.in);//sets up a scanner to read user unput
     public static String userInput;//create a string to store user input
-    public static ArrayList<Character> remainingLetters = new ArrayList<Character>(); 
+    public static ArrayList<String> remainingLetters = new ArrayList<String>(); 
 
     public static int randomWord;//an integer for the index of the random word
     public static String finalWord;//a string to store the correct word. This is what the userInput string is compared to
@@ -140,7 +140,7 @@ public class GameCommands{
     public static void setRemainingLetters(){
         if (!isLetterOne){
             for (int i = 0; i<remainingLetters.size(); i++){
-                if (userInput.charAt(0)) == remainingLetters.get(i)){
+                if (String.valueOf(userInput.charAt(0)) == remainingLetters.get(i)){
                     remainingLetters.remove(i);
                 }
             }

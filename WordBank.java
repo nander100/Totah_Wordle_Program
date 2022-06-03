@@ -4,7 +4,7 @@ public class WordBank {
     public static String[] wordList; //create a string array with size 21 (indexed from 0-20)
 
     public WordBank(){
-        wordList = new String[34];
+        wordList = new String[35];
     }
 
     /** This function is called once at the start of the game. It assigns words to their respective indecies */
@@ -44,8 +44,7 @@ public class WordBank {
         wordList[31] = "plane";
         wordList[32] = "house";
         wordList[33] = "sussy";
-
-        
+        wordList[34] = "manor";
 
     }
 }

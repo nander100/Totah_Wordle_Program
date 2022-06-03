@@ -7,19 +7,15 @@ public class RunWordle extends GameCommands   {
         startGame();
         myWordBank.fillList();
         setFinalWord();
-        addRemainingLetters();
         while (guessCounter!=6){
             displayTotal();
             setGuese();
             checkGuess();
-            setRemainingLetters();
             if (!userInput.equalsIgnoreCase(finalWord)){
                 printAid();
-                printRemainingLetters();
             }   
             else{
-                //guessCounter = 6;
-                break;
+                guessCounter = 6;
             }
         }
         endGame();

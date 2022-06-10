@@ -57,7 +57,7 @@ public class GameCommands{
         randomWord = (int)(Math.random()*(WordBank.wordList.length - 1));//picks a random number between 0 and one less than the length of the array for the index
         finalWord =  WordBank.wordList[randomWord];//sets the finalWord equal to the word at the random index in the list
         //finalWord = "aaaab";
-        //^^the above line is for troubleshooting purpouses.
+        //^^the above line is for troubleshooting purposes.
     }//end setFinalWord()
 
     public static void setGuese(){
@@ -191,10 +191,12 @@ public class GameCommands{
          * the program prints the "failure" line.
          */
         if (userInput.equalsIgnoreCase(finalWord)){
+            //congrats line
             System.out.println("Congrats! You've won");
             guessCounter = 6;
         }
         else{
+            //failure line
             System.out.println("YOU ARE A FAILURE! THE WORD WAS '" + finalWord + "'.");
         }
     }//end endGame()
